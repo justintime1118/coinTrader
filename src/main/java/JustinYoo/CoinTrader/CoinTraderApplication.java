@@ -3,24 +3,17 @@ package JustinYoo.CoinTrader;
 import okhttp3.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
+
 import java.io.IOException;
 
 @SpringBootApplication
+@EnableScheduling
 public class CoinTraderApplication {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		SpringApplication.run(CoinTraderApplication.class, args);
-
-		//Jwt jwt = new Jwt();
-		//String jwtToken = jwt.jwtInit();
-		OkHttpClient client = new OkHttpClient();
-		Request request = new Request.Builder()
-		.url("https://api.upbit.com/v1/ticker?markets=KRW-BTC")
-		.get()
-		.addHeader("Accept", "application/json")
-		.build();
-		Response response = client.newCall(request).execute();
-		System.out.println(response);
 	}
 }
 
+// [나의 잔고 조회를 통해 만일 손실이 나고 있다면 앱을 정지시키는 기능도 추후에 넣자]

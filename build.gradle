@@ -13,6 +13,7 @@ repositories {
 }
 
 dependencies {
+	compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.22'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation group: 'com.auth0', name: 'java-jwt', version: '3.19.2'
