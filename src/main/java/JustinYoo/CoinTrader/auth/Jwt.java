@@ -1,4 +1,4 @@
-package JustinYoo.CoinTrader;
+package JustinYoo.CoinTrader.auth;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;

@@ -1,11 +1,8 @@
 package JustinYoo.CoinTrader;
 
-import okhttp3.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
-
-import java.io.IOException;
 
 @SpringBootApplication
 @EnableScheduling

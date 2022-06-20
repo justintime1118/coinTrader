@@ -5,15 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="625ba358-32cd-40ea-bae6-56af62ce5e9d" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JustinYoo/CoinTrader/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JustinYoo/CoinTrader/Trade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JustinYoo/CoinTrader/exchange/Exchange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JustinYoo/CoinTrader/exchange/OldExchange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/JustinYoo/CoinTrader/TradeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/JustinYoo/CoinTrader/CoinTraderApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/JustinYoo/CoinTrader/CoinTraderApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/JustinYoo/CoinTrader/Jwt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JustinYoo/CoinTrader/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JustinYoo/CoinTrader/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JustinYoo/CoinTrader/CoinTraderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JustinYoo/CoinTrader/CoinTraderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JustinYoo/CoinTrader/Jwt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JustinYoo/CoinTrader/auth/Jwt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JustinYoo/CoinTrader/Trade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JustinYoo/CoinTrader/Trade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JustinYoo/CoinTrader/exchange/Binance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JustinYoo/CoinTrader/exchange/Binance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JustinYoo/CoinTrader/exchange/Exchange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JustinYoo/CoinTrader/exchange/Exchange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JustinYoo/CoinTrader/exchange/Upbit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JustinYoo/CoinTrader/exchange/Upbit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JustinYoo/CoinTrader/CoinTraderApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +63,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -69,6 +86,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -77,16 +95,104 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/jiyoo/programming/coinTrader",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "/Users/jiyoo/programming/coinTrader/src/test/java/JustinYoo/CoinTrader",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "reference.settingsDialog.application.dockerConsole",
     "spring.configuration.checksum": "ab0a371034ee99a46961da70e62873b8"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/JustinYoo/CoinTrader" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="JustinYoo.CoinTrader" />
+      <recent name="JustinYoo.CoinTrader.exchange" />
+      <recent name="JustinYoo.CoinTrader.web" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="JustinYoo.CoinTrader" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TradeTest">
+    <configuration name="JustinYoo.CoinTrader.ExchangeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JustinYoo.CoinTrader.ExchangeTest" />
+      <module name="CoinTrader.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JustinYoo.CoinTrader.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Trade" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JustinYoo.CoinTrader.Trade" />
+      <module name="CoinTrader.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JustinYoo.CoinTrader.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JustinYoo.CoinTrader.WebTest" />
+      <module name="CoinTrader.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JustinYoo.CoinTrader.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TradeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoinTrader.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JustinYoo.CoinTrader.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="JustinYoo.CoinTrader" />
+      <option name="MAIN_CLASS_NAME" value="JustinYoo.CoinTrader.TradeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TradeTest.trade" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoinTrader.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JustinYoo.CoinTrader.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="JustinYoo.CoinTrader" />
+      <option name="MAIN_CLASS_NAME" value="JustinYoo.CoinTrader.TradeTest" />
+      <option name="METHOD_NAME" value="trade" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="coinTrader" />
       <method v="2">
@@ -107,6 +213,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TradeTest" />
+        <item itemvalue="Application.WebTest" />
+        <item itemvalue="JUnit.TradeTest.trade" />
+        <item itemvalue="Application.JustinYoo.CoinTrader.ExchangeTest" />
+        <item itemvalue="Application.Trade" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -124,7 +239,10 @@
       <workItem from="1654245125149" duration="2000" />
       <workItem from="1654245158361" duration="583000" />
       <workItem from="1654492867356" duration="6934000" />
-      <workItem from="1655368200951" duration="15389000" />
+      <workItem from="1655368200951" duration="19320000" />
+      <workItem from="1655529913604" duration="772000" />
+      <workItem from="1655541340648" duration="2917000" />
+      <workItem from="1655600687173" duration="23144000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1654243987189</created>
@@ -165,6 +283,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>

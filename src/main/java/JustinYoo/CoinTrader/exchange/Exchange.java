@@ -1,7 +1,14 @@
 package JustinYoo.CoinTrader.exchange;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import lombok.Getter;
 
-public interface Exchange {
-    public void buy(long price);
-    public void sell(long price) ;
+@Getter
+public abstract class Exchange {
+    private String priceBit;
+    private String priceEther ;
+
+    public abstract int buy(String coinName, long price);
+    public abstract int sell(String coinName, long price);
+    public abstract String getPrice(String coinName) throws JsonProcessingException;
 }

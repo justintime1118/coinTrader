@@ -8,16 +8,14 @@ import org.springframework.stereotype.Component;
 @Component
 @RequiredArgsConstructor
 public class Trade {
-    private final Exchange domesticExchange;
-    private final Exchange foreignExchange;
+    private final Exchange upbit;
+    private final Exchange binance;
 
-    @Scheduled
-    public void Routine() {
-        if ()
+    //@Scheduled
+    public void trade() {
+        double arbitrage = Double.parseDouble(upbit.getPriceBit()) - Double.parseDouble(binance.getPriceBit());
+        System.out.println("arbitrage = " + arbitrage);
+        // (조건부) 알림 보내기
+        // (조건부) 주문 넣기
     }
 }
-
-//루틴 메서드 {
-//- 차익 계산. 각 거래소의 멤버 변수를 통해 계산하면 됨. 김치 프리미엄 구하는 공식을 이용하자
-//- (조건 부) 주문 체결. 각 거래소 메서드를 호출해주면 됨
-//}
