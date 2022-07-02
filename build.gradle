@@ -18,22 +18,24 @@ repositories {
 }
 
 dependencies {
-	//lombok 라이브러리 추가 시작
-	compileOnly 'org.projectlombok:lombok'
-	annotationProcessor 'org.projectlombok:lombok'
-	testCompileOnly 'org.projectlombok:lombok'
-	testAnnotationProcessor 'org.projectlombok:lombok'
-	//lombok 라이브러리 추가 끝
+	// lombok
+	compileOnly 'org.projectlombok:lombok:1.18.24'
+	annotationProcessor 'org.projectlombok:lombok:1.18.24'
+	testCompileOnly 'org.projectlombok:lombok:1.18.24'
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
 
 	// spring webClient
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
-
 	runtimeOnly("io.netty:netty-resolver-dns-native-macos:4.1.77.Final:osx-aarch_64")
+
+	// 업비트 jwt 토큰을 위한 라이브러리
+	implementation group: 'com.auth0', name: 'java-jwt', version: '3.19.2'
 
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation group: 'com.auth0', name: 'java-jwt', version: '3.19.2'
-	implementation group: 'com.squareup.okhttp3', name: 'okhttp', version: '4.9.3'
+
+
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

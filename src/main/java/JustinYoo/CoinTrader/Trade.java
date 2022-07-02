@@ -2,8 +2,9 @@ package JustinYoo.CoinTrader;
 
 import JustinYoo.CoinTrader.exchange.Exchange;
 import lombok.RequiredArgsConstructor;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
+
+import java.math.BigDecimal;
 
 @Component
 @RequiredArgsConstructor
@@ -13,7 +14,8 @@ public class Trade {
 
     //@Scheduled
     public void trade() {
-        double arbitrage = Double.parseDouble(upbit.getPriceBit()) - Double.parseDouble(binance.getPriceBit());
+        BigDecimal arbitrage = upbit.getPrice("KRW-TRX");
+        arbitrage.subtract(binance.getPrice("TRXUSDT"));
         System.out.println("arbitrage = " + arbitrage);
         // (조건부) 알림 보내기
         // (조건부) 주문 넣기

@@ -1,30 +1,32 @@
 package JustinYoo.CoinTrader.exchange;
 
 import JustinYoo.CoinTrader.dataClass.BinancePriceTicker;
-import org.springframework.stereotype.Component;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.junit.jupiter.api.Test;
 import org.springframework.web.reactive.function.client.WebClient;
 
 import java.math.BigDecimal;
 
-@Component
-public class Binance implements Exchange {
+class BinanceTest {
 
-    public int buy(String coinName, long price) {
-        System.out.println("Binance: " + "buy " + coinName + " at " + price);
-        return 0;
+    @Test
+    void buy() {
     }
 
-    public int sell(String coinName, long price) {
-        System.out.println("Binance: " + "sell " + coinName + " at " + price);
-        return 0;
+    @Test
+    void sell() {
     }
 
-    public BigDecimal getPrice(String coinName) {
+    @Test
+    void getPrice() {
+        String coinName = "TRXUSDT";
+
         WebClient webClient = WebClient.create();
         WebClient.ResponseSpec responseSpec = webClient.get()
                 .uri("https://www.binance.com/api/v3/ticker/price?symbol=" + coinName)
                 .retrieve();
         BigDecimal price = responseSpec.bodyToMono(BinancePriceTicker.class).block().getPrice();
-        return price;
+        System.out.println("price = " + price);
     }
 }

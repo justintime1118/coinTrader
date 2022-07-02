@@ -1,14 +1,14 @@
 package JustinYoo.CoinTrader.exchange;
 
+
 import com.fasterxml.jackson.core.JsonProcessingException;
-import lombok.Getter;
+import org.springframework.stereotype.Component;
 
-@Getter
-public abstract class Exchange {
-    private String priceBit;
-    private String priceEther ;
+import java.math.BigDecimal;
 
-    public abstract int buy(String coinName, long price);
-    public abstract int sell(String coinName, long price);
-    public abstract String getPrice(String coinName) throws JsonProcessingException;
+@Component
+public interface Exchange {
+    public int buy(String coinName, long price);
+    public int sell(String coinName, long price);
+    public BigDecimal getPrice(String coinName);
 }
